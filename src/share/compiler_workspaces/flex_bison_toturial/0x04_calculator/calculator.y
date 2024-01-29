@@ -21,7 +21,7 @@
 %%
 
 calclist: /* nothing */
- | calclist exp EOL { printf("= %d\n$ ", $2); }
+ | calclist exp EOL { printf("= %#x\n$ ", $2); }
  | calclist EOL { printf("$ "); } /* blank line or a comment */
  ;
 

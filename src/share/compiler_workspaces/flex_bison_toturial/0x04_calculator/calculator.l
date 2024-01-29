@@ -5,23 +5,26 @@
  * $Header: /home/johnl/flnb/code/RCS/fb1-5.l,v 2.1 2009/11/08 02:53:18 johnl Exp $
  */
 
-/* recognize tokens for the calculator and print them out */
+/* recognize tokens for the calculator and print them out 
+   [0-9]+	                                  { yylval = atoi(yytext); return NUMBER; }
+
+*/
 
 %{
 # include "calculator.tab.h"
 %}
 
 %%
-"+"	    { return ADD; }
-"-"	    { return SUB; }
-"*"	    { return MUL; }
-"/"	    { return DIV; }
-"~"     { return ABS; }
-"("     { return OP; }
-")"     { return CP; }
-[0-9]+	{ yylval = atoi(yytext); return NUMBER; }
-
-\n      { return EOL; }
+"+"	                                      { return ADD; }
+"-"	                                      { return SUB; }
+"*"	                                      { return MUL; }
+"/"	                                      { return DIV; }
+"~"                                       { return ABS; }
+"("                                       { return OP; }
+")"                                       { return CP; }
+(0x|0X)?[a-fA-F0-9]+                      { char* tmp; yylval = strtol(yytext, &tmp, 16); return NUMBER; }
+[0-9]+	                                  { yylval = atoi(yytext); return NUMBER; }
+\n                                        { return EOL; }
 "//".*                                    { /* match single line comment. */ }
 [/][*][^*]*[*]+([^*/][^*]*[*]+)*[/]       { /* match multiple line comments. */ }
 [/][*]                                    { printf("unterminated comment"); }
