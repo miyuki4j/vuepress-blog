@@ -22,6 +22,11 @@ export default navbar([
         icon: "pen-to-square",
         link: "2024-01-17"
       },
+      {
+        text: "2024-01-29",    
+        icon: "pen-to-square",
+        link: "2024-01-29"
+      },
     ]
   },
   "/demo/",
