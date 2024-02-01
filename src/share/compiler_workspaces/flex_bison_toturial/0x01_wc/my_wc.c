@@ -1753,7 +1753,15 @@ void yyfree (void * ptr )
 #line 10 "my_wc.l"
 
 
-int main(int argc, char **argv){
+int main(int argc, char **argv) {
+    if(argc > 1) {
+        yyin = fopen(argv[1], "r");
+        if(!yyin){
+            perror(argv[1]);
+            return 1;
+        }
+    }
     yylex();
-    printf("%8d %8d %8d\n",lines, words, chars);
+    printf("%8d%8d%8d\n", lines, words, chars);
+    return 0;
 }

@@ -1,8 +1,8 @@
 clean: 
-	rm -rf *.c *.h calculator
+	rm -rf *.c *.h calc
 
-calc: clean calculator.l calculator.y
-	rm -f *.c *.h; \
-	bison -d calculator.y; \
-  	flex calculator.l; \
-  	gcc calculator.tab.c lex.yy.c -lfl -Wimplicit-function-declaration -o calculator 
+build: clean *.l *.y
+	rm -f *.c *.h calc; \
+	bison -d *.y; \
+  	flex *.l; \
+  	gcc *.c -lfl -Wimplicit-function-declaration -o calc 
