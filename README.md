@@ -1,2 +1,2 @@
 # vuepress-blog
-个人博客的demo.
+个人博客.
