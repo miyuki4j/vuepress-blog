@@ -1,9 +1,0 @@
-import{_ as i}from"./plugin-vue_export-helper-c27b6911.js";import{r,o as t,c as d,a as e,b as n,e as s,f as o}from"./app-5bd54b5b.js";const c={},l=o(`<h1 id="数字孪生intro" tabindex="-1"><a class="header-anchor" href="#数字孪生intro" aria-hidden="true">#</a> 数字孪生intro</h1><h2 id="_1-国外内数字孪生解决方案" tabindex="-1"><a class="header-anchor" href="#_1-国外内数字孪生解决方案" aria-hidden="true">#</a> 1.国外内数字孪生解决方案</h2><div class="language-code line-numbers-mode" data-ext="code"><pre class="language-code"><code>https://modelbaba.com/digitaltwin/3245.html
-
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="git-growing" tabindex="-1"><a class="header-anchor" href="#git-growing" aria-hidden="true">#</a> Git Growing</h2><div class="language-code line-numbers-mode" data-ext="code"><pre class="language-code"><code>https://github.com/GrowingGit
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="python-for-beginners" tabindex="-1"><a class="header-anchor" href="#python-for-beginners" aria-hidden="true">#</a> python for beginners</h2><div class="language-code line-numbers-mode" data-ext="code"><pre class="language-code"><code>https://github.com/jackfrued/Python-Core-50-Courses
-https://github.com/jackfrued/Python-100-Days
-https://github.com/TheAlgorithms/Python
-https://awesome-python.com/
-
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7),h={href:"http://43.134.47.108:3003/",target:"_blank",rel:"noopener noreferrer"};function u(m,g){const a=r("ExternalLinkIcon");return t(),d("div",null,[l,e("p",null,[n("nextchat gpt: "),e("a",h,[n("http://43.134.47.108:3003/"),s(a)])])])}const p=i(c,[["render",u],["__file","2024-02-06.html.vue"]]);export{p as default};
